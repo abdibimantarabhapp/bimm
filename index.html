@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portofolio Bimantara Putrantyo Abdi — Desainer & Developer Kreatif.">
+<title>Bimantara Putrantyo Abdi — Desainer & Developer Kreatif</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+<!-- Stylesheet terpisah -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Progress bar scroll -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <p class="preloader-note">Portofolio — 2025</p>
+  <span class="preloader-count" id="preCount">0</span>
+</div>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+  <a href="#beranda" class="logo">Bimantara Putrantyo Abdi<span class="logo-mark">©</span></a>
+  <nav class="main-nav">
+    <a href="#tentang" class="nav-link" data-nav="tentang"><sup>01</sup>Tentang</a>
+    <a href="#teman"    class="nav-link" data-nav="teman"><sup>02</sup>Teman</a>
+    <a href="#bakat"    class="nav-link" data-nav="bakat"><sup>03</sup>Bakat</a>
+    <a href="#kontak"   class="nav-link" data-nav="kontak"><sup>04</sup>Kontak</a>
+  </nav>
+  <div class="header-right">
+    <a href="#kontak" class="btn-pill magnetic"><span>Mulai Proyek</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu"><i data-lucide="menu"></i></button>
+  </div>
+</header>
+
+<!-- Menu seluler layar penuh -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu-head">
+    <span class="logo">BP<span class="logo-mark">©</span></span>
+    <button class="menu-close" id="menuClose" aria-label="Tutup menu"><i data-lucide="x"></i></button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="#tentang" class="m-link" style="--d:.08s"><sup>01</sup>Tentang</a>
+    <a href="#teman"    class="m-link" style="--d:.16s"><sup>02</sup>Teman</a>
+    <a href="#bakat"    class="m-link" style="--d:.24s"><sup>03</sup>Bakat</a>
+    <a href="#kontak"   class="m-link" style="--d:.32s"><sup>04</sup>Kontak</a>
+  </nav>
+  <div class="mobile-menu-foot">
+    <a href="mailto:halo@bimantara.id">halo@bimantara.id</a>
+    <div class="socials">
+      <a class="social-link" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+      <a class="social-link" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+      <a class="social-link" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      <a class="social-link" href="https://dribbble.com" target="_blank" rel="noopener" aria-label="Dribbble"><i data-lucide="dribbble"></i></a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="beranda">
+    <div class="hero-top">
+      <p>Portofolio © 2025</p>
+      <p>Malang, Indonesia — 6.2°S / 106.8°E</p>
+    </div>
+
+    <div class="hero-main">
+      <h1 class="hero-title" id="heroTitle">
+        <span class="line-mask"><span class="line" data-line="0">Bima</span></span>
+        <span class="line-mask"><span class="line line-outline" data-line="1">Nantara</span></span>
+      </h1>
+      <div class="hero-aside">
+        <a href="#kontak" class="hero-badge" aria-label="Terbuka untuk proyek — hubungi saya">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <defs><path id="circlePath" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+            <text><textPath href="#circlePath" textLength="238" lengthAdjust="spacingAndGlyphs">TERBUKA UNTUK PROYEK • FREELANCE •</textPath></text>
+          </svg>
+          <span class="badge-center"><i data-lucide="arrow-down-right"></i></span>
+        </a>
+        <p class="hero-desc reveal" style="--d:.9s">Desainer & developer <em>kreatif</em> yang mengubah ide menjadi pengalaman digital yang hidup, detail, dan bermakna.</p>
+        <div class="hero-cta reveal" style="--d:1.05s">
+          <a href="#teman" class="btn-pill btn-ink magnetic"><span>Kenalan Dulu</span><i data-lucide="arrow-down"></i></a>
+          <a href="#kontak" class="link-underline">Hubungi saya</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-bottom">
+      <p>Desainer & Developer Kreatif</p>
+      <p class="scroll-hint">Gulir ke bawah <i data-lucide="arrow-down"></i></p>
+      <p class="hero-clock">JKT&nbsp;<span id="clock">--:--:--</span>&nbsp;WIB</p>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span>Desain Antarmuka</span><i data-lucide="asterisk"></i>
+        <span>Pengembangan Front-End</span><i data-lucide="asterisk"></i>
+        <span>Motion & Interaksi</span><i data-lucide="asterisk"></i>
+        <span>Identitas Visual</span><i data-lucide="asterisk"></i>
+        <span>Pengalaman Pengguna</span><i data-lucide="asterisk"></i>
+        <span>Desain Editorial</span><i data-lucide="asterisk"></i>
+      </div>
+      <div class="marquee-group">
+        <span>Desain Antarmuka</span><i data-lucide="asterisk"></i>
+        <span>Pengembangan Front-End</span><i data-lucide="asterisk"></i>
+        <span>Motion & Interaksi</span><i data-lucide="asterisk"></i>
+        <span>Identitas Visual</span><i data-lucide="asterisk"></i>
+        <span>Pengalaman Pengguna</span><i data-lucide="asterisk"></i>
+        <span>Desain Editorial</span><i data-lucide="asterisk"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TENTANG ============ -->
+  <section class="section" id="tentang">
+    <div class="section-grid">
+      <div class="section-label">
+        <p class="label-num">( 01 )</p>
+        <p class="label-name">Tentang Saya</p>
+      </div>
+      <div class="section-content">
+        <h2 class="section-title reveal">Merancang dengan <em>intuisi</em>, membangun dengan <em>presisi</em>.</h2>
+        <div class="about-body">
+          <figure class="about-figure reveal" id="aboutFigure">
+            <img src="assets/amib.jpeg" alt="Potret Bimantara Putrantyo Abdi" id="aboutImg">
+            <figcaption>Bimantara Putrantyo Abdi — Jakarta, 2025</figcaption>
+          </figure>
+          <div class="about-text">
+            <p class="lead reveal">Selama enam tahun terakhir saya membantu studio, startup, dan brand untuk terlihat — dan terasa — seperti dirinya sendiri di layar.</p>
+            <p class="reveal" style="--d:.1s">Saya percaya desain yang baik lahir dari kesabaran: tipografi yang dipilih dengan sengaja, ruang yang dibiarkan bernapas, dan gerakan yang punya alasan. Kode dan piksel saya perlakukan sama — sebagai bahan untuk bercerita.</p>
+            <p class="reveal" style="--d:.2s">Di luar layar, saya menghabiskan waktu dengan kopi manual brew, jurnal analog, dan mabar bareng empat sahabat saya di bawah. Ketelitian kecil seperti itulah yang saya bawa ke setiap proyek.</p>
+          </div>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><div class="stat-top"><span class="stat-num" data-count="6">0</span><span class="stat-plus">+</span></div><p>Tahun pengalaman</p></div>
+          <div class="stat"><div class="stat-top"><span class="stat-num" data-count="48">0</span><span class="stat-plus">+</span></div><p>Proyek selesai</p></div>
+          <div class="stat"><div class="stat-top"><span class="stat-num" data-count="21">0</span><span class="stat-plus">+</span></div><p>Klien global</p></div>
+          <div class="stat"><div class="stat-top"><span class="stat-num" data-count="4">0</span><span class="stat-plus">×</span></div><p>Sahabat mabar</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEMAN (bento: 1 unggulan + 2 reguler + 1 lebar) ============ -->
+  <section class="section section-friends" id="teman">
+    <div class="section-grid">
+      <div class="section-label">
+        <p class="label-num">( 02 )</p>
+        <p class="label-name">Teman Saya</p>
+      </div>
+      <div class="section-content">
+        <div class="friends-head reveal">
+          <h2 class="section-title">Empat <em>teman</em> yang selalu ada</h2>
+          <p>Empat sahabat — di dunia nyata maupun di dalam game. Klik kartu untuk membuka profil, gunakan panah di modal untuk pindah antar teman, atau ketuk Instagram-nya untuk mampir.</p>
+        </div>
+
+        <!-- strip meta kecil di bawah judul -->
+        <div class="friends-meta reveal" style="--d:.1s">
+          <span><i data-lucide="users"></i>4 Sahabat</span>
+          <span><i data-lucide="map-pin"></i>4 Kota</span>
+          <span><i data-lucide="calendar-days"></i>Mabar Sejak 2016</span>
+        </div>
+
+        <div class="friends-grid" id="friendsGrid">
+
+          <!-- 01 — KARTU UNGGULAN (besar 2×2) -->
+          <article class="friend-card friend-card--lg reveal" style="--d:0s" tabindex="0" role="button"
+                   data-name="Bima Putra Ardianysah" data-ig="a.bimmm_" data-tag="Sahabat Sejak OSPEK"
+                   data-since="2016" data-hobby="Mboh" data-city="Blitar"
+                   data-bio="Orang pertama yang percaya desain itu penting — karena saya yang mengajaknya ngobrol soal itu setiap pulang sekolah. Di dalam game dia jungler saya yang paling setia, dan sampai sekarang tetap kritikus paling jujur untuk karya saya."
+                   aria-label="Kenalan dengan Bima Putra Ardianysah">
+            <figure class="friend-photo">
+              <span class="friend-num">01</span>
+              <img src="assets/bima.jpeg" alt="Foto Bima Putra Ardianysah" loading="lazy">
+              <figcaption class="friend-overlay">
+                <i data-lucide="eye"></i><span>Mboh • Sejak 1945</span>
+              </figcaption>
+            </figure>
+            <div class="friend-info">
+              <h3 class="friend-name">Bima Putra Ardianysah</h3>
+              <span class="friend-tag">Sahabat Sejak OSPEK</span>
+            </div>
+            <a class="friend-ig" href="https://instagram.com/a.bimmm_" target="_blank" rel="noopener"
+               aria-label="Instagram Bima Putra Ardianysah" title="Buka Instagram Bima Putra Ardianysah">
+              <i data-lucide="instagram"></i><span>@a.bimmm_</span>
+            </a>
+          </article>
+
+          <!-- 02 -->
+          <article class="friend-card reveal" style="--d:.06s" tabindex="0" role="button"
+                   data-name="Leonel Anang" data-ig="anangeiieii" data-tag="Teman Satu Kos"
+                   data-since="2018" data-hobby="Ngeloco" data-city="Israel"
+                   data-bio="Pemilik kalimat legendaris: &quot;Tidur nanti saja, push rank tidak akan menunggu.&quot; Kami bertukar resep kopi sambil menunggu matchmaking."
+                   aria-label="Kenalan dengan Leonel Anang">
+            <figure class="friend-photo">
+              <span class="friend-num">02</span>
+              <img src="assets/anang.jpeg" alt="Foto Leonel Anang" loading="lazy">
+              <figcaption class="friend-overlay">
+                <i data-lucide="eye"></i><span>Ngeloco • Sejak Lahir</span>
+              </figcaption>
+            </figure>
+            <div class="friend-info">
+              <h3 class="friend-name">Leonel Anang</h3>
+              <span class="friend-tag">Teman Satu Kos</span>
+            </div>
+            <a class="friend-ig" href="https://instagram.com/anangeiieii" target="_blank" rel="noopener"
+               aria-label="Instagram Leonel Anang" title="Buka Instagram Leonel Anang">
+              <i data-lucide="instagram"></i><span>@anangeiieii</span>
+            </a>
+          </article>
+
+          <!-- 03 -->
+          <article class="friend-card reveal" style="--d:.12s" tabindex="0" role="button"
+                   data-name="Kevin" data-ig="arvareann" data-tag="Rekan Mancing"
+                   data-since="2019" data-hobby="Mancing" data-city="Tulungagung"
+                   data-bio="Rekan satu studio di kampus. Matanya sangat tajam untuk detail — sering menemukan hal yang terlewat dalam rancangan saya sebelum orang lain menyadarinya. Di game, dia support paling sabar yang pernah saya kenal."
+                   aria-label="Kenalan dengan Kevin">
+            <figure class="friend-photo">
+              <span class="friend-num">03</span>
+              <img src="assets/kavin.jpeg" alt="Foto Kevin" loading="lazy">
+              <figcaption class="friend-overlay">
+                <i data-lucide="eye"></i><span>Mancing • Sejak Merdeka</span>
+              </figcaption>
+            </figure>
+            <div class="friend-info">
+              <h3 class="friend-name">Kevin</h3>
+              <span class="friend-tag">Rekan Mancing</span>
+            </div>
+            <a class="friend-ig" href="https://instagram.com/arvareann" target="_blank" rel="noopener"
+               aria-label="Instagram Kevin" title="Buka Instagram Kevin">
+              <i data-lucide="instagram"></i><span>@arvareann</span>
+            </a>
+          </article>
+
+          <!-- 04 — KARTU LEBAR (landscape) -->
+          <article class="friend-card friend-card--wide reveal" style="--d:.18s" tabindex="0" role="button"
+                   data-name="Reyhan" data-ig="reyyy13k" data-tag="Rekan Ngocok"
+                   data-since="2021" data-hobby="Menulis" data-city="Suhat"
+                   data-bio="Copywriter yang bisa meredam diskusi panjang kami menjadi satu kalimat yang tepat. Kapten tim Ranked kami — setiap proyek maupun pertandingan selalu terasa lebih rapi setelah dia ikut."
+                   aria-label="Kenalan dengan Reyhan">
+            <figure class="friend-photo">
+              <span class="friend-num">04</span>
+              <img src="assets/rehan.jpeg" alt="Foto Reyhan" loading="lazy">
+              <figcaption class="friend-overlay">
+                <i data-lucide="eye"></i><span>Menulis • Sejak 2021</span>
+              </figcaption>
+            </figure>
+            <div class="friend-info">
+              <h3 class="friend-name">Reyhan</h3>
+              <span class="friend-tag">Rekan Ngocok</span>
+            </div>
+            <a class="friend-ig" href="https://instagram.com/reyyy13k" target="_blank" rel="noopener"
+               aria-label="Instagram Reyhan" title="Buka Instagram Reyhan">
+              <i data-lucide="instagram"></i><span>@reyyy13k</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BAKAT ============ -->
+  <section class="section" id="bakat">
+    <div class="section-grid">
+      <div class="section-label">
+        <p class="label-num">( 03 )</p>
+        <p class="label-name">Bakat Saya</p>
+      </div>
+      <div class="section-content">
+        <h2 class="section-title reveal">Bakat yang saya <em>asah</em></h2>
+        <div class="services" id="services">
+          <div class="service">
+            <button class="service-head" aria-expanded="false">
+              <span class="service-num">01</span>
+              <span class="service-name">Desain Grafis</span>
+              <span class="service-icon"><i data-lucide="plus"></i></span>
+            </button>
+            <div class="service-body"><div class="service-body-inner">
+              <p>Dari poster musisi sampai identitas kedai kopi — saya senang menerjemahkan ide menjadi komposisi visual yang punya karakter. Selalu dimulai dari sketsa pensil, diwarnai digital, dan diakhiri dengan tipografi yang rapi.</p>
+              <ul class="service-tags"><li>Poster & Layout</li><li>Identitas Visual</li><li>Ilustrasi</li><li>Photoshop</li></ul>
+            </div></div>
+          </div>
+          <div class="service">
+            <button class="service-head" aria-expanded="false">
+              <span class="service-num">02</span>
+              <span class="service-name">Fotografi</span>
+              <span class="service-icon"><i data-lucide="plus"></i></span>
+            </button>
+            <div class="service-body"><div class="service-body-inner">
+              <p>Kamera paling sering saya bidik adalah manusia: potret jujur, jalan kota, dan cahaya sore. Bagi saya memotret adalah latihan mengamati — keterampilan yang ikut terbawa saat merancang antarmuka.</p>
+              <ul class="service-tags"><li>Potret</li><li>Street Photography</li><li>Komposisi</li><li>Lightroom</li></ul>
+            </div></div>
+          </div>
+          <div class="service">
+            <button class="service-head" aria-expanded="false">
+              <span class="service-num">03</span>
+              <span class="service-name">Editing Video</span>
+              <span class="service-icon"><i data-lucide="plus"></i></span>
+            </button>
+            <div class="service-body"><div class="service-body-inner">
+              <p>Merangkai potongan-potongan menjadi cerita: reel singkat untuk media sosial sampai dokumentasi acara. Color grading adalah bagian favorit saya — suasana sebuah cerita sering bergantung di situ.</p>
+              <ul class="service-tags"><li>Premiere Pro</li><li>After Effects</li><li>Color Grading</li><li>Storytelling</li></ul>
+            </div></div>
+          </div>
+          <div class="service">
+            <button class="service-head" aria-expanded="false">
+              <span class="service-num">04</span>
+              <span class="service-name">Gaming & Komunitas</span>
+              <span class="service-icon"><i data-lucide="plus"></i></span>
+            </button>
+            <div class="service-body"><div class="service-body-inner">
+              <p>Empat tahun memimpin komunitas game lokal: dari turnamen kecil, konten, sampai event offline. Game mengajarkan saya hal yang sama dengan desain — membaca situasi, bekerja dalam tim, dan tetap tenang saat sempit.</p>
+              <ul class="service-tags"><li>Manajemen Komunitas</li><li>Turnamen</li><li>Konten Gaming</li><li>Teamwork</li></ul>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAK + FOOTER ============ -->
+  <section class="section section-dark" id="kontak">
+    <div class="section-grid">
+      <div class="section-label">
+        <p class="label-num">( 04 )</p>
+        <p class="label-name">Kontak</p>
+      </div>
+      <div class="section-content">
+        <h2 class="contact-title reveal">Mari buat sesuatu yang <em>bermakna</em>.</h2>
+        <div class="contact-body">
+          <div class="contact-info">
+            <p class="reveal">Punya proyek, ide, atau sekadar ingin mabar? Kotak masuk saya selalu terbuka — biasanya saya membalas dalam 1×24 jam.</p>
+            <button class="email-big reveal" style="--d:.1s" id="emailCopy" title="Klik untuk menyalin email">
+              halo@bimantara.id <i data-lucide="copy"></i>
+            </button>
+            <div class="contact-meta reveal" style="--d:.15s">
+              <i data-lucide="map-pin"></i><span>Jakarta, Indonesia — bekerja remote ke seluruh dunia</span>
+            </div>
+            <div class="socials reveal" style="--d:.2s">
+              <a class="social-link" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+              <a class="social-link" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+              <a class="social-link" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+              <a class="social-link" href="https://dribbble.com" target="_blank" rel="noopener" aria-label="Dribbble"><i data-lucide="dribbble"></i></a>
+            </div>
+          </div>
+          <form class="contact-form reveal" style="--d:.1s" id="contactForm" novalidate>
+            <div class="field">
+              <label for="fNama">Nama</label>
+              <input id="fNama" name="nama" type="text" placeholder="Nama lengkap Anda" autocomplete="name">
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="fEmail">Email</label>
+              <input id="fEmail" name="email" type="email" placeholder="nama@contoh.com" autocomplete="email">
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="fPesan">Pesan</label>
+              <textarea id="fPesan" name="pesan" placeholder="Ceritakan proyek Anda…"></textarea>
+              <span class="field-error"></span>
+            </div>
+            <button type="submit" class="btn-pill btn-paper magnetic" id="submitBtn">
+              <span id="submitLabel">Kirim Pesan</span>
+              <span class="btn-icon" id="submitIcon"><i data-lucide="send"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025 Bimantara Putrantyo Abdi</p>
+      <p>Dibuat dengan teliti di Jakarta</p>
+      <button class="to-top" id="toTop">Kembali ke atas <i data-lucide="arrow-up"></i></button>
+    </footer>
+  </section>
+</main>
+
+<!-- ============ MODAL PROFIL TEMAN (dengan navigasi) ============ -->
+<div class="modal" id="friendModal" aria-hidden="true">
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Tutup profil teman"><i data-lucide="x"></i></button>
+    <div class="modal-media"><img id="modalImg" alt="Foto teman"></div>
+    <div class="modal-body">
+      <div class="modal-head"><h3 id="modalTitle"></h3><span id="modalTag"></span></div>
+      <a class="modal-ig" id="modalIg" href="#" target="_blank" rel="noopener" title="Buka profil Instagram">
+        <i data-lucide="instagram"></i><span>Instagram&nbsp;·&nbsp;<b id="modalIgName"></b></span>
+        <i data-lucide="arrow-up-right" class="modal-ig-arrow"></i>
+      </a>
+      <p id="modalBio"></p>
+      <div class="modal-meta">
+        <div><h4>Kenal Sejak</h4><p id="modalSince"></p></div>
+        <div><h4>Hobi</h4><p id="modalHobby"></p></div>
+        <div><h4>Kota</h4><p id="modalCity"></p></div>
+      </div>
+      <div class="modal-foot">
+        <span class="modal-count" id="modalCount">01 / 04</span>
+        <div class="modal-nav">
+          <button class="modal-nav-btn" id="modalPrev" aria-label="Teman sebelumnya"><i data-lucide="arrow-left"></i></button>
+          <button class="modal-nav-btn" id="modalNext" aria-label="Teman berikutnya"><i data-lucide="arrow-right"></i></button>
+        </div>
+      </div>
+      <a href="#tentang" class="btn-pill btn-ink magnetic" id="modalCta"><span>Kenal saya lebih dekat</span><i data-lucide="arrow-up-right"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Wadah notifikasi toast -->
+<div class="toast-wrap" id="toastWrap"></div>
+
+<!-- Script terpisah -->
+<script src="script.js"></script>
+</body>
+</html>
